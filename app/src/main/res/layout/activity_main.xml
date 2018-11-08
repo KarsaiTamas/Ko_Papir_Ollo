@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/Player_Kep"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+
+        android:background="@drawable/rock" />
+    <android.support.v7.widget.AppCompatCheckedTextView
+        android:id="@+id/Valasztasod_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A te választásod!"
+        android:textSize="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Player_Kep"/>
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/Gep_Kep"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/Valasztasod_Text"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rock"
+        />
+    <android.support.v7.widget.AppCompatCheckedTextView
+        android:id="@+id/Gep_Valasztas_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="A Gép választása!"
+        android:textSize="40dp"
+        android:layout_below="@+id/Gep_Kep"/>
+
+    <android.support.v7.widget.AppCompatCheckedTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:text="Eredmény:\n Ember: 0 pont Gép: 0 pont"
+        android:textSize="28dp"
+        android:id="@+id/Eredmeny_Text"
+        android:layout_below="@+id/Gombok"/>
+
+<LinearLayout
+    android:id="@+id/Gombok"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/Gep_Valasztas_Text"
+    android:layout_marginTop="5dp"
+    android:layout_centerHorizontal="true"
+    android:orientation="horizontal"
+    >
+
+    <Button
+        android:id="@+id/Ko_Gomb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kő"
+        android:textSize="20dp"/>
+    <Button
+        android:id="@+id/Papir_Gomb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Papír"
+        android:textSize="20dp"/>
+    <Button
+        android:id="@+id/Ollo_Gomb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ollo"
+        android:textSize="20dp"/>
+
+</LinearLayout>
+</RelativeLayout>

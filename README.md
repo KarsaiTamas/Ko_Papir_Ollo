@@ -1,1 +1,0 @@
-Ko_Papir_Ollo
